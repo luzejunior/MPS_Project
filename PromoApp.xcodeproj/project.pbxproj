@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D446A51B1ECD0C8B008FF6F2 /* UserSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D446A51A1ECD0C8B008FF6F2 /* UserSingleton.swift */; };
+		D446A5211ECD1BD0008FF6F2 /* PromocoesSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D446A5201ECD1BD0008FF6F2 /* PromocoesSingleton.swift */; };
+		D446A5231ECD1BFC008FF6F2 /* Promotions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D446A5221ECD1BFC008FF6F2 /* Promotions.swift */; };
+		D446A5251ECD22DC008FF6F2 /* PromotionCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D446A5241ECD22DC008FF6F2 /* PromotionCommand.swift */; };
 		D46961EF1E8C959400262878 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46961EE1E8C959400262878 /* AppDelegate.swift */; };
 		D46961F11E8C959400262878 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46961F01E8C959400262878 /* ViewController.swift */; };
 		D46961F41E8C959400262878 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D46961F21E8C959400262878 /* Main.storyboard */; };
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D446A51A1ECD0C8B008FF6F2 /* UserSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSingleton.swift; sourceTree = "<group>"; };
+		D446A5201ECD1BD0008FF6F2 /* PromocoesSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromocoesSingleton.swift; sourceTree = "<group>"; };
+		D446A5221ECD1BFC008FF6F2 /* Promotions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Promotions.swift; sourceTree = "<group>"; };
+		D446A5241ECD22DC008FF6F2 /* PromotionCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromotionCommand.swift; sourceTree = "<group>"; };
 		D46961EB1E8C959400262878 /* PromoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PromoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D46961EE1E8C959400262878 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D46961F01E8C959400262878 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +82,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D446A51C1ECD18FE008FF6F2 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				D446A51A1ECD0C8B008FF6F2 /* UserSingleton.swift */,
+				D446A5201ECD1BD0008FF6F2 /* PromocoesSingleton.swift */,
+			);
+			name = Singleton;
+			sourceTree = "<group>";
+		};
+		D446A51D1ECD1909008FF6F2 /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				D446A5241ECD22DC008FF6F2 /* PromotionCommand.swift */,
+			);
+			name = Command;
+			sourceTree = "<group>";
+		};
 		D46961E21E8C959400262878 = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +155,9 @@
 		D469621C1E8C95A500262878 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D446A51D1ECD1909008FF6F2 /* Command */,
+				D446A51C1ECD18FE008FF6F2 /* Singleton */,
+				D446A5221ECD1BFC008FF6F2 /* Promotions.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -279,7 +307,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D46961F11E8C959400262878 /* ViewController.swift in Sources */,
+				D446A5231ECD1BFC008FF6F2 /* Promotions.swift in Sources */,
+				D446A5211ECD1BD0008FF6F2 /* PromocoesSingleton.swift in Sources */,
 				D46961EF1E8C959400262878 /* AppDelegate.swift in Sources */,
+				D446A5251ECD22DC008FF6F2 /* PromotionCommand.swift in Sources */,
+				D446A51B1ECD0C8B008FF6F2 /* UserSingleton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,6 +560,7 @@
 				D46962151E8C959400262878 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D46962161E8C959400262878 /* Build configuration list for PBXNativeTarget "PromoAppTests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +569,7 @@
 				D46962181E8C959400262878 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D46962191E8C959400262878 /* Build configuration list for PBXNativeTarget "PromoAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +578,7 @@
 				D469621B1E8C959400262878 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
