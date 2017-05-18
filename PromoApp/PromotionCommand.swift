@@ -13,7 +13,7 @@ protocol ClassCommand{
 }
 
 class AddPromotion: ClassCommand{
-    let promocoesSing = PromocoesSingleton()
+    let promocoesSing = PromocoesSingleton.shared
     var promotion: Promotions?
     
     required init(title: String, desc: String, value: Float){
@@ -26,7 +26,7 @@ class AddPromotion: ClassCommand{
 }
 
 class RemovePromotion: ClassCommand{
-    let promocoesSing = PromocoesSingleton()
+    let promocoesSing = PromocoesSingleton.shared
     var promoTitle: String
     
     required init(title: String){
@@ -46,7 +46,7 @@ class RemovePromotion: ClassCommand{
 }
 
 class BuscaPromotion: ClassCommand{
-    let promocoesSing = PromocoesSingleton()
+    let promocoesSing = PromocoesSingleton.shared
     var promoTitle: String
     var promoSearched: Promotions!
     

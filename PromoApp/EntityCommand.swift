@@ -9,7 +9,7 @@
 import Foundation
 
 protocol EntityCommandProt{
-    func execute()
+    func execute() -> [AnyObject]
 }
 
 class AddEntity: EntityCommandProt{
@@ -19,11 +19,14 @@ class AddEntity: EntityCommandProt{
     
     required init(anyObj: AnyObject?, anyObjArray: [AnyObject]?){
         self.anyObj = anyObj
-        self.anyObjArray = anyObjArray!
+        if anyObjArray != nil{
+            self.anyObjArray = anyObjArray!
+        }
     }
     
-    func execute() {
-        anyObjArray.append(self.anyObj!)
+    func execute() -> [AnyObject]{
+        self.anyObjArray.append(self.anyObj!)
+        return self.anyObjArray
     }
 }
 
@@ -34,11 +37,14 @@ class RemoveEntity: EntityCommandProt{
     
     required init(indice: Int?, anyObjArray: [AnyObject]?){
         self.promoIndice = indice!
-        self.anyObjArray = anyObjArray!
+        if anyObjArray != nil{
+            self.anyObjArray = anyObjArray!
+        }
     }
     
-    func execute() {
+    func execute() -> [AnyObject]{
         anyObjArray.remove(at: promoIndice)
+        return self.anyObjArray
     }
 }
 
@@ -49,17 +55,15 @@ class BuscaEntity: EntityCommandProt{
     var atIndex: Int!
     
     required init(anyObjArray: [AnyObject]?, atIndex: Int?){
-        self.anyObjArray = anyObjArray!
+        if anyObjArray != nil{
+            self.anyObjArray = anyObjArray!
+        }
         self.atIndex = atIndex!
     }
     
-    func execute(){
-        self.anyobjSearched = self.execute()
-    }
-    
-    func execute() -> AnyObject?{
+    func execute() -> [AnyObject]{
         self.anyobjSearched = self.anyObjArray[atIndex]
-        return anyobjSearched
+        return anyObjArray
     }
 }
 
@@ -74,14 +78,14 @@ class EntityCommand{
         self.searchCommand = BuscaEntity(anyObjArray: nil, atIndex: 0)
     }
     
-    func add(anyObj: AnyObject, anyObjArray: [AnyObject]){
+    func add(anyObj: AnyObject, anyObjArray: [AnyObject]) -> [AnyObject]{
         self.addCommand = AddEntity(anyObj: anyObj, anyObjArray: anyObjArray)
-        self.addCommand.execute()
+        return self.addCommand.execute()
     }
     
-    func remove(anyObjArray: [AnyObject], atIndex: Int){
+    func remove(anyObjArray: [AnyObject], atIndex: Int) -> [AnyObject]{
         self.removeCommand = RemoveEntity(indice: atIndex, anyObjArray: anyObjArray)
-        self.removeCommand.execute()
+        return self.removeCommand.execute()
     }
     
     func search(anyObjArray: [AnyObject], atIndex: Int) -> AnyObject{

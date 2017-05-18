@@ -10,12 +10,15 @@ import Foundation
 
 public class Facade{
     
-    private static let singleton = PromocoesSingleton()
+    private static let singleton = PromocoesSingleton.shared
     private static let commands = EntityCommand()
+    
+    init(){}
     
     public class func addPromotion(title: String, desc: String, value: Float){
         let newPromotion = Promotions(description: desc, title: title, price: value)
-        commands.add(anyObj: newPromotion, anyObjArray: singleton.promotionsArray)
+        print(singleton.promotionsArray.count)
+        singleton.promotionsArray = commands.add(anyObj: newPromotion, anyObjArray: singleton.promotionsArray) as! [Promotions]
     }
     
     public class func removePromotion(title: String){

@@ -12,7 +12,7 @@ final class PromocoesSingleton{
     
     static let shared = PromocoesSingleton()
     
-    init() {
+    private init() {
     }
     
     var promotionsArray: [Promotions] = []
