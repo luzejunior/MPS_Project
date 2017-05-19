@@ -13,6 +13,7 @@
 		D446A5251ECD22DC008FF6F2 /* PromotionCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D446A5241ECD22DC008FF6F2 /* PromotionCommand.swift */; };
 		D446A5291ECDD092008FF6F2 /* EntityCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D446A5281ECDD092008FF6F2 /* EntityCommand.swift */; };
 		D446A52B1ECDD4F2008FF6F2 /* Facade.swift in Sources */ = {isa = PBXBuildFile; fileRef = D446A52A1ECDD4F2008FF6F2 /* Facade.swift */; };
+		D446A52F1ECE72F5008FF6F2 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = D446A52E1ECE72F5008FF6F2 /* Login.swift */; };
 		D46961EF1E8C959400262878 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46961EE1E8C959400262878 /* AppDelegate.swift */; };
 		D46961F11E8C959400262878 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46961F01E8C959400262878 /* ViewController.swift */; };
 		D46961F41E8C959400262878 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D46961F21E8C959400262878 /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		D446A5241ECD22DC008FF6F2 /* PromotionCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromotionCommand.swift; sourceTree = "<group>"; };
 		D446A5281ECDD092008FF6F2 /* EntityCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityCommand.swift; sourceTree = "<group>"; };
 		D446A52A1ECDD4F2008FF6F2 /* Facade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Facade.swift; sourceTree = "<group>"; };
+		D446A52E1ECE72F5008FF6F2 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		D46961EB1E8C959400262878 /* PromoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PromoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D46961EE1E8C959400262878 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D46961F01E8C959400262878 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,21 @@
 			name = Command;
 			sourceTree = "<group>";
 		};
+		D446A52C1ECE711E008FF6F2 /* Strategy */ = {
+			isa = PBXGroup;
+			children = (
+				D446A52E1ECE72F5008FF6F2 /* Login.swift */,
+			);
+			name = Strategy;
+			sourceTree = "<group>";
+		};
+		D446A52D1ECE7127008FF6F2 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Adapter;
+			sourceTree = "<group>";
+		};
 		D46961E21E8C959400262878 = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +177,8 @@
 		D469621C1E8C95A500262878 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D446A52D1ECE7127008FF6F2 /* Adapter */,
+				D446A52C1ECE711E008FF6F2 /* Strategy */,
 				D446A51D1ECD1909008FF6F2 /* Command */,
 				D446A51C1ECD18FE008FF6F2 /* Singleton */,
 				D446A5221ECD1BFC008FF6F2 /* Promotions.swift */,
@@ -318,6 +337,7 @@
 				D446A52B1ECDD4F2008FF6F2 /* Facade.swift in Sources */,
 				D46961EF1E8C959400262878 /* AppDelegate.swift in Sources */,
 				D446A5251ECD22DC008FF6F2 /* PromotionCommand.swift in Sources */,
+				D446A52F1ECE72F5008FF6F2 /* Login.swift in Sources */,
 				D446A51B1ECD0C8B008FF6F2 /* UserSingleton.swift in Sources */,
 				D446A5291ECDD092008FF6F2 /* EntityCommand.swift in Sources */,
 			);
