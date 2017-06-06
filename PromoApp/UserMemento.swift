@@ -11,13 +11,18 @@ import Foundation
 typealias Memento = Promotions
 
 protocol abstractMemento{
-    var memento: Memento{get set}
+    var memento: Memento?{get set}
 }
 
-class userMemento: abstractMemento{
-    var memento: Memento
+class promoMemento: abstractMemento{
+    var memento: Memento?
+    var mem_newTitle: String?
     
-    init(promotion: Promotions) {
+    static let shared = promoMemento()
+    
+    init(){}
+    
+    init?(promotion: Promotions) {
         self.memento = promotion
     }
     
@@ -26,6 +31,6 @@ class userMemento: abstractMemento{
     }
     
     func undo() -> Memento{
-        return self.memento
+        return self.memento!
     }
 }

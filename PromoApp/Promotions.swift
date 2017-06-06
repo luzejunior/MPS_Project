@@ -23,6 +23,19 @@ final class Promotions{
         }
     }
     
+    public func setPromoTitle(title: String){
+        self.promoTitle = title
+    }
+    
+    public func setPromoPrice(price: String){
+        let floatPrice = Float(price)
+        self.promoPrice = floatPrice!
+    }
+    
+    public func setPromoDesc(desc: String){
+        self.promoDescription = desc
+    }
+    
     public var getPromoDescription: String{
         return self.promoDescription
     }
