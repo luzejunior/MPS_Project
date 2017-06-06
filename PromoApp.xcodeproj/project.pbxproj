@@ -21,6 +21,7 @@
 		D449052B1EE721F60042D88F /* StateObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449052A1EE721F60042D88F /* StateObserver.swift */; };
 		D449052E1EE72C260042D88F /* PromotionsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449052D1EE72C260042D88F /* PromotionsState.swift */; };
 		D44905311EE72F450042D88F /* UserPrototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44905301EE72F450042D88F /* UserPrototype.swift */; };
+		D44905341EE732F50042D88F /* UserMemento.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44905331EE732F50042D88F /* UserMemento.swift */; };
 		D46961EF1E8C959400262878 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46961EE1E8C959400262878 /* AppDelegate.swift */; };
 		D46961F11E8C959400262878 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46961F01E8C959400262878 /* ViewController.swift */; };
 		D46961F41E8C959400262878 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D46961F21E8C959400262878 /* Main.storyboard */; };
@@ -62,6 +63,7 @@
 		D449052A1EE721F60042D88F /* StateObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateObserver.swift; sourceTree = "<group>"; };
 		D449052D1EE72C260042D88F /* PromotionsState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromotionsState.swift; sourceTree = "<group>"; };
 		D44905301EE72F450042D88F /* UserPrototype.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPrototype.swift; sourceTree = "<group>"; };
+		D44905331EE732F50042D88F /* UserMemento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMemento.swift; sourceTree = "<group>"; };
 		D46961EB1E8C959400262878 /* PromoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PromoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D46961EE1E8C959400262878 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D46961F01E8C959400262878 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +174,14 @@
 			name = Prototype;
 			sourceTree = "<group>";
 		};
+		D44905321EE732E10042D88F /* Memento */ = {
+			isa = PBXGroup;
+			children = (
+				D44905331EE732F50042D88F /* UserMemento.swift */,
+			);
+			name = Memento;
+			sourceTree = "<group>";
+		};
 		D46961E21E8C959400262878 = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +238,7 @@
 		D469621C1E8C95A500262878 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D44905321EE732E10042D88F /* Memento */,
 				D449052F1EE72F360042D88F /* Prototype */,
 				D449052C1EE72C030042D88F /* Facade */,
 				D44905271EE7215E0042D88F /* Observer */,
@@ -392,6 +403,7 @@
 				D44905251EE71C610042D88F /* States.swift in Sources */,
 				D449052E1EE72C260042D88F /* PromotionsState.swift in Sources */,
 				D446A52B1ECDD4F2008FF6F2 /* Facade.swift in Sources */,
+				D44905341EE732F50042D88F /* UserMemento.swift in Sources */,
 				D46961EF1E8C959400262878 /* AppDelegate.swift in Sources */,
 				D446A5251ECD22DC008FF6F2 /* PromotionCommand.swift in Sources */,
 				D446A52F1ECE72F5008FF6F2 /* Login.swift in Sources */,
