@@ -20,8 +20,8 @@
 		D44905291EE721740042D88F /* ObserverProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44905281EE721740042D88F /* ObserverProtocol.swift */; };
 		D449052B1EE721F60042D88F /* StateObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449052A1EE721F60042D88F /* StateObserver.swift */; };
 		D449052E1EE72C260042D88F /* PromotionsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449052D1EE72C260042D88F /* PromotionsState.swift */; };
-		D44905311EE72F450042D88F /* UserPrototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44905301EE72F450042D88F /* UserPrototype.swift */; };
-		D44905341EE732F50042D88F /* UserMemento.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44905331EE732F50042D88F /* UserMemento.swift */; };
+		D44905311EE72F450042D88F /* PromotionsPrototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44905301EE72F450042D88F /* PromotionsPrototype.swift */; };
+		D44905341EE732F50042D88F /* PromotionsMemento.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44905331EE732F50042D88F /* PromotionsMemento.swift */; };
 		D46961EF1E8C959400262878 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46961EE1E8C959400262878 /* AppDelegate.swift */; };
 		D46961F11E8C959400262878 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46961F01E8C959400262878 /* ViewController.swift */; };
 		D46961F41E8C959400262878 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D46961F21E8C959400262878 /* Main.storyboard */; };
@@ -62,8 +62,8 @@
 		D44905281EE721740042D88F /* ObserverProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObserverProtocol.swift; sourceTree = "<group>"; };
 		D449052A1EE721F60042D88F /* StateObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateObserver.swift; sourceTree = "<group>"; };
 		D449052D1EE72C260042D88F /* PromotionsState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromotionsState.swift; sourceTree = "<group>"; };
-		D44905301EE72F450042D88F /* UserPrototype.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPrototype.swift; sourceTree = "<group>"; };
-		D44905331EE732F50042D88F /* UserMemento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMemento.swift; sourceTree = "<group>"; };
+		D44905301EE72F450042D88F /* PromotionsPrototype.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromotionsPrototype.swift; sourceTree = "<group>"; };
+		D44905331EE732F50042D88F /* PromotionsMemento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromotionsMemento.swift; sourceTree = "<group>"; };
 		D46961EB1E8C959400262878 /* PromoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PromoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D46961EE1E8C959400262878 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D46961F01E8C959400262878 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -160,7 +160,6 @@
 		D449052C1EE72C030042D88F /* Facade */ = {
 			isa = PBXGroup;
 			children = (
-				D446A51D1ECD1909008FF6F2 /* Command */,
 				D446A52A1ECDD4F2008FF6F2 /* Facade.swift */,
 			);
 			name = Facade;
@@ -169,7 +168,7 @@
 		D449052F1EE72F360042D88F /* Prototype */ = {
 			isa = PBXGroup;
 			children = (
-				D44905301EE72F450042D88F /* UserPrototype.swift */,
+				D44905301EE72F450042D88F /* PromotionsPrototype.swift */,
 			);
 			name = Prototype;
 			sourceTree = "<group>";
@@ -177,7 +176,7 @@
 		D44905321EE732E10042D88F /* Memento */ = {
 			isa = PBXGroup;
 			children = (
-				D44905331EE732F50042D88F /* UserMemento.swift */,
+				D44905331EE732F50042D88F /* PromotionsMemento.swift */,
 			);
 			name = Memento;
 			sourceTree = "<group>";
@@ -188,6 +187,29 @@
 				D44905211EE6F4CE0042D88F /* EnterpriseDecorator.swift */,
 			);
 			name = Decorator;
+			sourceTree = "<group>";
+		};
+		D44905361EE76E2B0042D88F /* Projeto_2 */ = {
+			isa = PBXGroup;
+			children = (
+				D446A51D1ECD1909008FF6F2 /* Command */,
+				D44905231EE71C520042D88F /* State */,
+				D449052C1EE72C030042D88F /* Facade */,
+				D446A52C1ECE711E008FF6F2 /* Strategy */,
+				D446A51C1ECD18FE008FF6F2 /* Singleton */,
+			);
+			name = Projeto_2;
+			sourceTree = "<group>";
+		};
+		D44905371EE76E500042D88F /* Projeto_3 */ = {
+			isa = PBXGroup;
+			children = (
+				D44905271EE7215E0042D88F /* Observer */,
+				D449052F1EE72F360042D88F /* Prototype */,
+				D44905321EE732E10042D88F /* Memento */,
+				D44905351EE767330042D88F /* Decorator */,
+			);
+			name = Projeto_3;
 			sourceTree = "<group>";
 		};
 		D46961E21E8C959400262878 = {
@@ -246,15 +268,9 @@
 		D469621C1E8C95A500262878 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				D44905351EE767330042D88F /* Decorator */,
-				D44905321EE732E10042D88F /* Memento */,
-				D449052F1EE72F360042D88F /* Prototype */,
-				D449052C1EE72C030042D88F /* Facade */,
-				D44905271EE7215E0042D88F /* Observer */,
-				D44905231EE71C520042D88F /* State */,
+				D44905361EE76E2B0042D88F /* Projeto_2 */,
+				D44905371EE76E500042D88F /* Projeto_3 */,
 				D446A52D1ECE7127008FF6F2 /* User Classes */,
-				D446A52C1ECE711E008FF6F2 /* Strategy */,
-				D446A51C1ECD18FE008FF6F2 /* Singleton */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -406,12 +422,12 @@
 				D46961F11E8C959400262878 /* ViewController.swift in Sources */,
 				D446A5231ECD1BFC008FF6F2 /* Promotions.swift in Sources */,
 				D446A5211ECD1BD0008FF6F2 /* PromocoesSingleton.swift in Sources */,
-				D44905311EE72F450042D88F /* UserPrototype.swift in Sources */,
+				D44905311EE72F450042D88F /* PromotionsPrototype.swift in Sources */,
 				D449052B1EE721F60042D88F /* StateObserver.swift in Sources */,
 				D44905251EE71C610042D88F /* States.swift in Sources */,
 				D449052E1EE72C260042D88F /* PromotionsState.swift in Sources */,
 				D446A52B1ECDD4F2008FF6F2 /* Facade.swift in Sources */,
-				D44905341EE732F50042D88F /* UserMemento.swift in Sources */,
+				D44905341EE732F50042D88F /* PromotionsMemento.swift in Sources */,
 				D46961EF1E8C959400262878 /* AppDelegate.swift in Sources */,
 				D446A5251ECD22DC008FF6F2 /* PromotionCommand.swift in Sources */,
 				D446A52F1ECE72F5008FF6F2 /* Login.swift in Sources */,

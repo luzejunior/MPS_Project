@@ -126,7 +126,7 @@ class PromotionCommand{
     
     func modify(title: String, newTitle: String, newDesc: String, newValue: String){
         let searched = self.search(title: title)
-        self.memento.save(memento: searched)
+        self.memento.save(memento: searched.clone())
         self.memento.mem_newTitle = newTitle
         self.modifyCommand = ChangePromotion(title: title, newTitle: newTitle, newDescription: newDesc, newValue: newValue)
         self.modifyCommand?.execute()
