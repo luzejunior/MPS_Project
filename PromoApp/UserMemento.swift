@@ -8,7 +8,7 @@
 
 import Foundation
 
-typealias Memento = User
+typealias Memento = Promotions
 
 protocol abstractMemento{
     var memento: Memento{get set}
@@ -17,8 +17,12 @@ protocol abstractMemento{
 class userMemento: abstractMemento{
     var memento: Memento
     
-    init(user: User) {
-        self.memento = user
+    init(promotion: Promotions) {
+        self.memento = promotion
+    }
+    
+    func save(memento: Memento){
+        self.memento = memento
     }
     
     func undo() -> Memento{
