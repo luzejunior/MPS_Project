@@ -56,10 +56,10 @@ class BuscaPromotion: ClassCommand{
     }
     
     func execute(){
-        promoSearched = execute()
+        promoSearched = execute_search()
     }
     
-    func execute() -> Promotions?{
+    func execute_search() -> Promotions?{
         for entry in promocoesSing.promotionsArray{
             if entry.getPromoTitle == self.promoTitle {
                 promoSearched = entry
@@ -119,9 +119,9 @@ class PromotionCommand{
     }
     
     func search(title: String) -> Promotions{
-        self.searchCommand = BuscaPromotion(title: title)
-        let command = self.searchCommand!.execute() as! BuscaPromotion
-        return command.promoSearched
+        let searchCommand = BuscaPromotion(title: title)
+        searchCommand.execute()
+        return searchCommand.promoSearched
     }
     
     func modify(title: String, newTitle: String, newDesc: String, newValue: String){

@@ -135,7 +135,6 @@
 			children = (
 				D446A5221ECD1BFC008FF6F2 /* Promotions.swift */,
 				D449051F1EE6ECCC0042D88F /* Users.swift */,
-				D44905211EE6F4CE0042D88F /* EnterpriseDecorator.swift */,
 			);
 			name = "User Classes";
 			sourceTree = "<group>";
@@ -161,6 +160,7 @@
 		D449052C1EE72C030042D88F /* Facade */ = {
 			isa = PBXGroup;
 			children = (
+				D446A51D1ECD1909008FF6F2 /* Command */,
 				D446A52A1ECDD4F2008FF6F2 /* Facade.swift */,
 			);
 			name = Facade;
@@ -180,6 +180,14 @@
 				D44905331EE732F50042D88F /* UserMemento.swift */,
 			);
 			name = Memento;
+			sourceTree = "<group>";
+		};
+		D44905351EE767330042D88F /* Decorator */ = {
+			isa = PBXGroup;
+			children = (
+				D44905211EE6F4CE0042D88F /* EnterpriseDecorator.swift */,
+			);
+			name = Decorator;
 			sourceTree = "<group>";
 		};
 		D46961E21E8C959400262878 = {
@@ -238,6 +246,7 @@
 		D469621C1E8C95A500262878 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D44905351EE767330042D88F /* Decorator */,
 				D44905321EE732E10042D88F /* Memento */,
 				D449052F1EE72F360042D88F /* Prototype */,
 				D449052C1EE72C030042D88F /* Facade */,
@@ -245,7 +254,6 @@
 				D44905231EE71C520042D88F /* State */,
 				D446A52D1ECE7127008FF6F2 /* User Classes */,
 				D446A52C1ECE711E008FF6F2 /* Strategy */,
-				D446A51D1ECD1909008FF6F2 /* Command */,
 				D446A51C1ECD18FE008FF6F2 /* Singleton */,
 			);
 			name = Classes;

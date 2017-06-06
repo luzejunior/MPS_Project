@@ -24,6 +24,9 @@ class ViewController: UIViewController {
         Facade.addPromotion(title: "Fiat Uno", desc: "Carro Novinho", value: 25000.00)
         //promCommand.add(title: "Carro novo", desc: "Carro Novinho", value: 30000.00)
         
+        Facade.removePromotion(title: "Fiat Uno")
+        Facade.modifyPromotion(title: "Fiat Palio", newTitle: "Fiat Palio AT", newDescription: "", newValue: "")
+        
         print(singleton.promotionsArray.count)
         for entry in singleton.promotionsArray{
             print(entry.getPromoTitle)
