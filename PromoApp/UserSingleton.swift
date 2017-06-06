@@ -15,5 +15,5 @@ final class UserSingleton{
     private init(){
     }
     
-    var user: AnyObject?
+    var user: AnyObject!
 }

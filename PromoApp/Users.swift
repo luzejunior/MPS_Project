@@ -16,6 +16,7 @@ public class User{
     private var CPF_Number: String = ""
     private var city: String = ""
     private var dataNascimento: String = ""
+    private var isAdm: Bool = false
     
     init(userName: String, userEmail: String, userPassword: String, userCPF: String, userCity: String, userDataNasc: String) {
         self.userName = userName
@@ -48,5 +49,9 @@ public class User{
     
     func getDataNascimento() -> String{
         return self.dataNascimento
+    }
+    
+    func changeADM(){
+        self.isAdm = true
     }
 }

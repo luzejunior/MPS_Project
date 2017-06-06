@@ -13,6 +13,7 @@ class Promotions{
     private var promoDescription: String = ""
     private var promoTitle: String = ""
     private var promoPrice: Float = 0.00
+    private var state: State = InactiveState()
     
     public var getPromoDescription: String{
         return self.promoDescription
@@ -25,6 +26,14 @@ class Promotions{
     public var getPromoPrice: String{
         let priceString = "R$\(promoPrice)"
         return priceString
+    }
+    
+    public var getState: String{
+        return self.state.state
+    }
+    
+    public func changeState(state: State){
+        self.state = state
     }
     
     init(description: String, title: String, price: Float) {
