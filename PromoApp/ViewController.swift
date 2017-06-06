@@ -28,6 +28,10 @@ class ViewController: UIViewController {
         for entry in singleton.promotionsArray{
             print(entry.getPromoTitle)
         }
+        
+        singleton.promotionsArray[0].changeState(state: ActiveState())
+        print(singleton.promotionsArray[0].getState)
+        
     }
 
     override func didReceiveMemoryWarning() {

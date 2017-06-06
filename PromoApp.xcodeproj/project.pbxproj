@@ -17,6 +17,8 @@
 		D44905201EE6ECCC0042D88F /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449051F1EE6ECCC0042D88F /* Users.swift */; };
 		D44905221EE6F4CE0042D88F /* EnterpriseDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44905211EE6F4CE0042D88F /* EnterpriseDecorator.swift */; };
 		D44905251EE71C610042D88F /* States.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44905241EE71C610042D88F /* States.swift */; };
+		D44905291EE721740042D88F /* ObserverProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44905281EE721740042D88F /* ObserverProtocol.swift */; };
+		D449052B1EE721F60042D88F /* StateObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449052A1EE721F60042D88F /* StateObserver.swift */; };
 		D46961EF1E8C959400262878 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46961EE1E8C959400262878 /* AppDelegate.swift */; };
 		D46961F11E8C959400262878 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46961F01E8C959400262878 /* ViewController.swift */; };
 		D46961F41E8C959400262878 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D46961F21E8C959400262878 /* Main.storyboard */; };
@@ -54,6 +56,8 @@
 		D449051F1EE6ECCC0042D88F /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		D44905211EE6F4CE0042D88F /* EnterpriseDecorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterpriseDecorator.swift; sourceTree = "<group>"; };
 		D44905241EE71C610042D88F /* States.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = States.swift; sourceTree = "<group>"; };
+		D44905281EE721740042D88F /* ObserverProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObserverProtocol.swift; sourceTree = "<group>"; };
+		D449052A1EE721F60042D88F /* StateObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateObserver.swift; sourceTree = "<group>"; };
 		D46961EB1E8C959400262878 /* PromoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PromoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D46961EE1E8C959400262878 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D46961F01E8C959400262878 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +142,15 @@
 			name = State;
 			sourceTree = "<group>";
 		};
+		D44905271EE7215E0042D88F /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				D44905281EE721740042D88F /* ObserverProtocol.swift */,
+				D449052A1EE721F60042D88F /* StateObserver.swift */,
+			);
+			name = Observer;
+			sourceTree = "<group>";
+		};
 		D46961E21E8C959400262878 = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +207,7 @@
 		D469621C1E8C95A500262878 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D44905271EE7215E0042D88F /* Observer */,
 				D44905231EE71C520042D88F /* State */,
 				D446A52D1ECE7127008FF6F2 /* User Classes */,
 				D446A52C1ECE711E008FF6F2 /* Strategy */,
@@ -351,6 +365,7 @@
 				D46961F11E8C959400262878 /* ViewController.swift in Sources */,
 				D446A5231ECD1BFC008FF6F2 /* Promotions.swift in Sources */,
 				D446A5211ECD1BD0008FF6F2 /* PromocoesSingleton.swift in Sources */,
+				D449052B1EE721F60042D88F /* StateObserver.swift in Sources */,
 				D44905251EE71C610042D88F /* States.swift in Sources */,
 				D446A52B1ECDD4F2008FF6F2 /* Facade.swift in Sources */,
 				D46961EF1E8C959400262878 /* AppDelegate.swift in Sources */,
@@ -360,6 +375,7 @@
 				D44905221EE6F4CE0042D88F /* EnterpriseDecorator.swift in Sources */,
 				D44905201EE6ECCC0042D88F /* Users.swift in Sources */,
 				D446A5291ECDD092008FF6F2 /* EntityCommand.swift in Sources */,
+				D44905291EE721740042D88F /* ObserverProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

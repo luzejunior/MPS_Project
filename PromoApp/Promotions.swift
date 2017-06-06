@@ -8,12 +8,20 @@
 
 import Foundation
 
-class Promotions{
+final class Promotions{
     
     private var promoDescription: String = ""
     private var promoTitle: String = ""
     private var promoPrice: Float = 0.00
-    private var state: State = InactiveState()
+    
+    let observer: ObserverObject = StateObserver()
+    
+    var state: State = InactiveState(){
+        willSet(newValue){
+            print("Setando a variável")
+            observer.willChange(promotionTitle: self.promoTitle, newValue: newValue)
+        }
+    }
     
     public var getPromoDescription: String{
         return self.promoDescription

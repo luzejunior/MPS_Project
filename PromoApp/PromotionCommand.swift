@@ -37,6 +37,7 @@ class RemovePromotion: ClassCommand{
         var i: Int = 0
         for entry in promocoesSing.promotionsArray{
             if entry.getPromoTitle == self.promoTitle {
+                promocoesSing.promotionsArray[i].changeState(state: DeletedState())
                 promocoesSing.promotionsArray.remove(at: i)
                 break
             }
