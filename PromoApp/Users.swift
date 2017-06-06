@@ -27,6 +27,30 @@ public class User{
         self.dataNascimento = userDataNasc
     }
     
+    func setUserName(userName: String){
+        self.userName = userName
+    }
+    
+    func setUserEmail(userEmail: String){
+        self.userEmail = userEmail
+    }
+    
+    func setUserPass(userPass: String){
+        self.userPassword = userPass
+    }
+    
+    func setUserCPF(userCPF: String){
+        self.CPF_Number = userCPF
+    }
+    
+    func setUserCity(userCity: String){
+        self.city = userCity
+    }
+    
+    func setUserDataNasc(dataNasc: String){
+        self.dataNascimento = dataNasc
+    }
+    
     func getUserName() -> String{
         return self.userName
     }
